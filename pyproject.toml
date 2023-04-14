@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "flask-blog"
+version = "0.1.0"
+description = "blog app in flask"
+authors = ["juliojm1310 <juliojm1310@gmail.com>"]
+readme = "README.md"
+packages = [{include = "flask_blog"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
