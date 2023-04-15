@@ -13,28 +13,28 @@ USERS = [
         'name': 'Lola',
         'created_at': 'June 28, 2020',
         'comments_count': 10,
-        'photo': '/static/images/image_1.jpg',
+        'photo': '/static/images/person_1.jpg',
     },
     {
         'id': 2,
         'name': 'Juan',
         'created_at': 'Mar 15, 2021',
         'comments_count': 6,
-        'photo': '/static/images/image_2.jpg',
+        'photo': '/static/images/person_2.jpg',
     },
     {
         'id': 3,
         'name': 'Pedro',
         'created_at': 'Aug 29, 2020',
         'comments_count': 10,
-        'photo': '/static/images/image_3.jpg',
+        'photo': '/static/images/person_3.jpg',
     },
     {
         'id': 4,
         'name': 'Tom',
         'created_at': 'Oct 17, 2020',
         'comments_count': 3,
-        'photo': '/static/images/image_4.jpg',
+        'photo': '/static/images/person_4.jpg',
     },
 ]
 
