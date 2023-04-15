@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }} -
+Articles list
+{% endblock %}
+
+{% block body %}
+<div class="row pt-md-4">
+    {% for article in articles %}
+    <div class="col-md-12">
+        <div class="blog-entry ftco-animate d-md-flex">
+            <a href="{{ url_for('articles.articles_detail' , pk=article.id) }}" class="img img-2"
+               style="background-image: url({{article.photo}});"></a>
+            <div class="text text-2 pl-md-4">
+                <h3 class="mb-2"><a href="{{ url_for('articles.articles_detail' , pk=article.id) }}">{{article.name}}</a>
+                </h3>
+                <div class="meta-wrap">
+                    <p class="meta">
+                        <span><i class="icon-calendar mr-2"></i>{{article.created_at}}</span>
+                        <span><i class="icon-comment2 mr-2"></i>{{article.comments_count}}</span>
+                    </p>
+                </div>
+                <p>{{article.description}}</p>
+                <p><a href="{{ url_for('articles.articles_detail' , pk=article.id) }}" class="btn-custom">Read more<span
+                        class="ion-ios-arrow-forward"></span></a></p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

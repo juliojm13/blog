@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }} -
+User {{user.name}}
+{% endblock %}
+
+{% block body %}
+<div class="col-md-12">
+    <div class="row d-flex">
+        <div class="col-lg-8 px-md-5 py-5">
+            <div class="row pt-md-4">
+                <h1 class="mb-3">{{user.name}}</h1>
+                <img src="{{user.photo}}" alt="" class="img-fluid">
+
+                <p>Molestiae cupiditate inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt
+                    doloribus nesciunt! Minima laborum magni reiciendis qui voluptate quisquam voluptatem soluta illo
+                    eum ullam incidunt rem assumenda eveniet eaque sequi deleniti tenetur dolore amet fugit perspiciatis
+                    ipsa, odit. Nesciunt dolor minima esse vero ut ea, repudiandae suscipit!</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
