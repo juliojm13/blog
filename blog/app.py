@@ -1,7 +1,7 @@
-from flask import Flask
-
-from blog.user.views import user
 from blog.articles.views import articles
+from blog.user.views import user
+
+from flask import Flask
 
 
 def create_app() -> Flask:
